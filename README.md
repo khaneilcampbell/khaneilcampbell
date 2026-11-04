@@ -4,7 +4,9 @@
 
 I embed with teams, find the real problem and ship AI workflows and integrations that people actually adopt.
 
-[khaneilcampbell.com](https://khaneilcampbell.com) · [LinkedIn](https://www.linkedin.com/in/khaneil-campbell) · contact@khaneilcampbell.com · [Benjaire](https://benjaire.com) · Open to Forward Deployed and AI Engineer roles, New York or remote
+[khaneilcampbell.com](https://khaneilcampbell.com) · [LinkedIn](https://www.linkedin.com/in/khaneil-campbell) · contact@khaneilcampbell.com · [Benjaire](https://benjaire.com) 
+
+· Open to Forward Deployed and AI Engineer roles, New York or remote
 
 ### About
 
