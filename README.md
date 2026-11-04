@@ -10,7 +10,11 @@ I embed with teams, find the real problem and ship AI workflows and integrations
 
 ### About
 
-For five years I supported the people and systems behind enterprise IT at Columbia University and NYC Health + Hospitals, which taught me to find the real need behind a request and make a fix stick. I now build AI agents and LLM integrations with Claude, MCP, CrewAI, n8n, Python and TypeScript, and I ship them the way a service desk would want them: tested, documented and with a human approving anything that matters. *Fix it twice, document it. Ten times, automate it.*
+I have spent more than four years supporting the Columbia University community, with earlier IT roles at NYC Health + Hospitals, Montefiore and Buffalo State University. Resolving incidents and service requests for people who need to get back to work taught me to look past the first request to the real problem, and to earn trust with evidence rather than promises.
+
+I bring that same discipline to AI. I build agents and integrations with Claude, MCP, CrewAI and n8n, with validation and human oversight designed in from the start. In Benjaire Flow, Claude drafts every reply but never sends one. In Atlas, nothing changes without my approval and an audit log entry. My approach is simple: solve problems with evidence, automate with intention and build systems people can trust.
+
+*Fix it twice, document it. Ten times, automate it.*
 
 ### What I do
 
