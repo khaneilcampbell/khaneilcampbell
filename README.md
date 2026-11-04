@@ -1,32 +1,30 @@
-## Hi, I'm Khaneil Campbell
+## Khaneil Campbell
 
-I’m an enterprise technology professional focused on AI Solutions Engineering and automation. Over five years in IT service management and user support at Columbia University and NYC Health + Hospitals, I’ve learned how technical needs connect to the people and processes around them.
+**Forward Deployed AI Engineer · Agents, integrations and automation for real teams**
 
-That perspective informs my independent AI projects. I built an AI-assisted email workflow with n8n and Claude, and I’m developing other workflows using Python, CrewAI, APIs and MCP connectors. I focus on clear task design, careful testing, documentation and human review.
+I embed with teams, find the real problem and ship AI workflows and integrations that people actually adopt.
 
-My CompTIA Security+ and ITIL 4 Foundation certifications, along with a Splunk SOC detection lab based on a simulated brute-force scenario, reinforce my attention to security and reliability. I’m pursuing AI Solutions Engineering roles where I can understand customer needs, design and implement workflows and support adoption.
+[khaneilcampbell.com](https://khaneilcampbell.com) · [LinkedIn](https://www.linkedin.com/in/khaneil-campbell) · contact@khaneilcampbell.com · [Benjaire](https://benjaire.com) · Open to Forward Deployed and AI Engineer roles, New York or remote
 
-*Fix it twice, document it. Ten times, automate it.*
+### About
 
-### Independent project: Benjaire
+For five years I supported the people and systems behind enterprise IT at Columbia University and NYC Health + Hospitals, which taught me to find the real need behind a request and make a fix stick. I now build AI agents and LLM integrations with Claude, MCP, CrewAI, n8n, Python and TypeScript, and I ship them the way a service desk would want them: tested, documented and with a human approving anything that matters. *Fix it twice, document it. Ten times, automate it.*
 
-[**Benjaire**](https://benjaire.com) is an independent project where I put my work in AI, automation and systems design into practice, end to end. It has two tracks:
+### What I do
 
-| Track | Focus | Status |
-|---|---|---|
-| **Digital Solutions** | Workflow automation and AI integration for small professional services firms. First release: [**Benjaire Flow**](https://benjaire.com/digital/flow), six ready to import n8n workflows where Claude sorts each website inquiry, drafts a reply and keeps follow ups on time. | Benjaire Flow v1.0 released |
-| **Consumer Brands** | Consumer technology, tech accessories, lifestyle and ecommerce | Research |
+- **Discovery and scoping.** Turn a stakeholder's request into requirements I label verified, proposed or needs evidence, before writing code.
+- **Agents and LLM integration.** Claude through the Anthropic API and MCP servers, CrewAI multi-agent pipelines and n8n workflows wired into real tools like Stripe, Canva, GitHub and email.
+- **Shipping with guardrails.** Schema validation and citation checks on model output, spend caps, human approval gates, CI tests, secret scanning, CodeQL and strict Content Security Policies.
+- **Adoption.** Runbooks, setup guides and knowledge articles written in the Knowledge-Centered Service style I used on the service desk.
 
-The project follows the same process as the rest of my work: build lean, validate before expanding and document everything so it can be repeated. Its website ([source](https://github.com/khaneilcampbell/benjaire.com)) is an Astro site on Cloudflare Workers, with a contact Worker protected by Turnstile that forwards inquiries to Benjaire Flow in n8n, Stripe checkout with automated delivery of the download and a strict Content Security Policy generated at build time. Every pull request runs type, link, SEO and WCAG 2.2 AA accessibility checks.
+### Selected work
 
-### Featured projects
-
-| Project | What it shows |
+| Project | Problem → what I built → how it's verified → outcome |
 |---|---|
-| [**Multi-Agent Commerce Pipeline**](https://github.com/khaneilcampbell/multi-agent-commerce-pipeline) | CrewAI agents on Claude take a product from brand research to a Shopify listing on a Linux VPS, with designs made through Canva's MCP server, behind credential scanning, five preflight checks and publish limits |
-| [**khaneilcampbell.com**](https://github.com/khaneilcampbell/khaneilcampbell.com) | My portfolio, built with Claude: an editorial "Atelier" design in brass and serif type, case studies with interactive architecture diagrams, one first-party script under a strict CSP and a security audit on every pull request |
-| [**Splunk Brute Force Detection Lab**](https://github.com/khaneilcampbell/splunk-bruteforce-detection-lab) | An SMB brute-force attack from Kali Linux on Windows 11, caught by a Splunk threshold alert (81 failed logons), with triage notes written in Python through the Splunk REST API |
-| [**Security labs**](https://khaneilcampbell.com/labs.html) | Authentication log analysis with Splunk, a phishing-to-malware response walkthrough and access control and account lifecycle workflows |
+| [**Atlas**](https://github.com/khaneilcampbell/ai-ops-atlas) | I needed one place to see every agent, workflow and repository I run. Built a Tauri (Rust + React/TypeScript) Mac app and a Cloudflare Pages web build. Its Repository Intelligence agent sends one Claude request per run, validates the JSON against a schema, drops citations the model invented and enforces per-run and monthly spend caps. Write actions need Touch ID and are audit-logged. 139 test files, Playwright visual checks, a performance budget and CodeQL run in CI, and every merge ships a signed build. |
+| [**Benjaire Flow**](https://benjaire.com/digital/flow) | Small service firms lose leads in their inbox. Built six importable n8n workflows: Claude sorts each website inquiry and drafts a reply for the owner to approve (it never sends to prospects), with reminders, a weekly digest and error alerts behind a Cloudflare Worker form with Turnstile. 17 test scenarios run before go-live. Released as v1.0 with Stripe checkout. |
+| [**Multi-Agent Commerce Pipeline**](https://github.com/khaneilcampbell/multi-agent-commerce-pipeline) | Take a digital product from idea to sale without manual handoffs. CrewAI agents on Claude plan the brand and listings, Canva's MCP server makes the designs, and Stripe sells them from a static storefront, run by systemd on a Linux VPS. New products stay drafts until I approve them, Stripe calls are idempotent, and 58 tests, gitleaks and pip-audit run in CI. |
+| [**Splunk Brute Force Detection Lab**](https://github.com/khaneilcampbell/splunk-bruteforce-detection-lab) | Detection and observability from end to end. Simulated SMB brute force from Kali on Windows 11, caught it with a Splunk threshold alert (81 failed logons) and wrote triage notes automatically in Python through the Splunk REST API, with unit tests and step-by-step evidence |
 
 ### Latest on GitHub
 
@@ -43,28 +41,16 @@ The project follows the same process as the rest of my work: build lean, validat
 | [**khaneilcampbell.com**](https://github.com/khaneilcampbell/khaneilcampbell.com) ★1 | AI-assisted portfolio site on GitHub Pages with Cloudflare DNS and automated security checks `accessibility` `cloudflare` `github-actions` `github-pages` | HTML | 2026-10-28 |
 <!-- AUTO:REPOS:END -->
 
-### Tools and technologies
+### Stack
 
 | Area | Tools |
 |---|---|
-| **AI platforms** | Claude, Claude Code, Anthropic API, MCP servers and connectors, CrewAI, Columbia CHAT, ChatGPT, Microsoft Copilot, Google Gemini, NotebookLM |
-| **Automation and development** | Python, PowerShell, REST APIs, Git, GitHub Actions, VS Code, n8n |
-| **Security operations** | Splunk Enterprise (SPL), Kali Linux, Windows Event Log analysis, Proofpoint, MITRE ATT&CK, NIST incident response |
-| **Identity and access** | Active Directory, Cisco Duo MFA, PuTTY (SSH), QWS3270 |
-| **Remote support** | BeyondTrust, Cisco Secure Client, Remote Desktop |
-| **Infrastructure** | Cloudflare, GitHub Pages, Linux VPS, VirtualBox |
-| **Service management** | ServiceNow, Confluence, ITIL 4, Knowledge-Centered Service (KCS) |
-| **Operating systems** | Windows, macOS, Linux, iOS, Android |
+| **AI and agents** | Claude, Claude Code, Anthropic API, MCP servers and connectors, CrewAI, n8n |
+| **Languages** | Python, TypeScript, Rust (Tauri), PowerShell, SQL, Splunk SPL |
+| **Cloud, CI/CD and infrastructure** | GitHub Actions, Cloudflare Workers and Pages (D1, Access), Linux VPS with systemd, Docker, Git |
+| **Security and observability** | Splunk Enterprise, CodeQL, gitleaks, pip-audit, Dependabot, CSP, MITRE ATT&CK, NIST incident response |
+| **Enterprise IT** | ServiceNow, Confluence, Active Directory, Cisco Duo MFA, ITIL 4, Knowledge-Centered Service |
 
-### Certifications and training
+### Certifications
 
-- CompTIA Security+
-- ITIL 4 Foundation
-- HDI KCS Foundation
-- HDI Customer Service Representative
-- AI Literacy: Advanced Course for Developers, Columbia University
-- Cybersecurity mentorship with Columbia's Cybersecurity Engineering Manager
-
-### Connect
-
-[khaneilcampbell.com](https://khaneilcampbell.com) · [Work](https://khaneilcampbell.com/projects.html) · [Benjaire](https://benjaire.com) · [LinkedIn](https://www.linkedin.com/in/khaneil-campbell) · contact@khaneilcampbell.com
+CompTIA Security+ · ITIL 4 Foundation · HDI KCS Foundation · HDI Customer Service Representative · AI Literacy: Advanced Course for Developers (Columbia University)
