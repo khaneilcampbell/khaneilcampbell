@@ -1,8 +1,6 @@
 ## Khaneil Campbell
 
-**AI Engineer · Agents, integrations and automation for real teams**
-
-I embed with teams, find the real problem and ship AI workflows and integrations that people actually adopt.
+**AI Engineering · Agents, integrations and automation**
 
 [khaneilcampbell.com](https://khaneilcampbell.com) · [LinkedIn](https://www.linkedin.com/in/khaneil-campbell) · contact@khaneilcampbell.com · [Benjaire](https://benjaire.com) 
 
