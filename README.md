@@ -38,7 +38,7 @@ I bring that same discipline to AI. I build agents and integrations with Claude,
 
 | Repository | About | Language | Updated |
 |---|---|---|---|
-| [**ai-ops-atlas**](https://github.com/khaneilcampbell/ai-ops-atlas) ★1 | Atlas is a secure, observable AI operations control plane that unifies enterprise infrastructure, repositories, business workflows, and autonomous agents into one intelligent operating platform. | TypeScript | 2026-11-07 |
+| [**ai-ops-atlas**](https://github.com/khaneilcampbell/ai-ops-atlas) ★1 | Atlas is a secure, observable AI operations control plane that unifies enterprise infrastructure, repositories, business workflows, and autonomous agents into one intelligent operating platform. | TypeScript | 2026-11-08 |
 | [**benjaire.com**](https://github.com/khaneilcampbell/benjaire.com) ★1 | Independent project: static website for Benjaire, a New York company, deployed on GitHub Pages and Cloudflare `accessibility` `cloudflare-pages` `github-pages` `html-css` | Astro | 2026-11-07 |
 | [**multi-agent-commerce-pipeline**](https://github.com/khaneilcampbell/multi-agent-commerce-pipeline) ★2 | Multi-agent product pipeline: CrewAI agents on Claude, Canva MCP, and Shopify, deployed on a Linux VPS `ai-agents` `anthropic` `crewai` `mcp` | Python | 2026-11-04 |
 | [**splunk-bruteforce-detection-lab**](https://github.com/khaneilcampbell/splunk-bruteforce-detection-lab) ★1 | Security operations lab simulating SMB brute-force attacks, with Splunk detection engineering and automated case triage in Python `blue-team` `cybersecurity` `detection-engineering` `python` | Python | 2026-11-02 |
