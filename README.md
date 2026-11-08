@@ -1,6 +1,6 @@
 ## Khaneil Campbell
 
-**Forward Deployed AI Engineer · Agents, integrations and automation for real teams**
+**AI Engineer · Agents, integrations and automation for real teams**
 
 I embed with teams, find the real problem and ship AI workflows and integrations that people actually adopt.
 
