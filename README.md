@@ -1,10 +1,8 @@
 ## Khaneil Campbell
 
-**AI Engineering · Agents, integrations and automation**
+**AI Solutions Engineer · Agents, integrations and automation**
 
 [khaneilcampbell.com](https://khaneilcampbell.com) · [LinkedIn](https://www.linkedin.com/in/khaneil-campbell) · contact@khaneilcampbell.com · [Benjaire](https://benjaire.com) 
-
-· Open to Forward Deployed and AI Engineer roles, New York or remote
 
 ### About
 
