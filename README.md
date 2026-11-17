@@ -23,10 +23,18 @@ I bring that same discipline to AI. I build agents and integrations with Claude,
 
 | Project | Problem → what I built → how it's verified → outcome |
 |---|---|
-| [**Atlas**](https://github.com/khaneilcampbell/ai-ops-atlas) | I needed one place to see every agent, workflow and repository I run. Built a Tauri (Rust + React/TypeScript) Mac app and a Cloudflare Pages web build. Its Repository Intelligence agent sends one Claude request per run, validates the JSON against a schema, drops citations the model invented and enforces per-run and monthly spend caps. Write actions need Touch ID and are audit-logged. 139 test files, Playwright visual checks, a performance budget and CodeQL run in CI, and every merge ships a signed build. |
+| [**Atlas**](https://github.com/khaneilcampbell/ai-ops-atlas) | I needed one place to see and run every agent, workflow and repository I operate. Built a Tauri (Rust + React/TypeScript) Mac app and a Cloudflare Pages web build, now with a Mission Control surface where I plan, approve and delegate goals to agents, and Phase 9 autonomous operations that correlate incidents and run read-only recovery playbooks under per-playbook policy, with an emergency stop and a redacted audit trail. The Repository Intelligence agent sends one Claude request per run, validates the JSON against a schema, drops citations the model invented and enforces per-run and monthly spend caps. Write actions need Touch ID and are audit-logged. 139 test files, Playwright visual checks, a performance budget and CodeQL run in CI, and every merge ships a signed build. |
 | [**Benjaire Flow**](https://benjaire.com/digital/flow) | Small service firms lose leads in their inbox. Built six importable n8n workflows: Claude sorts each website inquiry and drafts a reply for the owner to approve (it never sends to prospects), with reminders, a weekly digest and error alerts behind a Cloudflare Worker form with Turnstile. 17 test scenarios run before go-live, and an eval suite scores the sorting on 60 labeled inquiries: 100% spam and budget accuracy, 98% service match, 5 of 5 prompt-injection attempts resisted. Released as v1.0 with Stripe checkout. |
 | [**Multi-Agent Commerce Pipeline**](https://github.com/khaneilcampbell/multi-agent-commerce-pipeline) | Take a digital product from idea to sale without manual handoffs. CrewAI agents on Claude plan the brand and listings, Canva's MCP server makes the designs, and Stripe sells them from a static storefront, run by systemd on a Linux VPS. New products stay drafts until I approve them, Stripe calls are idempotent, and 58 tests, gitleaks and pip-audit run in CI. |
 | [**Splunk Brute Force Detection Lab**](https://github.com/khaneilcampbell/splunk-bruteforce-detection-lab) | Detection and observability from end to end. Simulated SMB brute force from Kali on Windows 11, caught it with a Splunk threshold alert (81 failed logons) and wrote triage notes automatically in Python through the Splunk REST API, with unit tests and step-by-step evidence |
+
+### Recent activity
+
+- **2026-11-17** — Atlas: shipped Mission Control's executive goals (plan, approve, delegate to agents) and Phase 9 autonomous operations — incident correlation, read-only recovery playbooks gated by per-playbook policy, an emergency stop and a redacted audit trail.
+- **2026-11-17** — Atlas: routed Benjaire Flow and Multi-Agent Commerce Pipeline failures into a live agent-failure feed so outages surface in one place instead of separate inboxes.
+- **2026-11-15** — Benjaire Flow: added kill switches to instantly disable the contact form and Stripe checkout paths if something goes wrong in production.
+- **2026-11-04** — Multi-Agent Commerce Pipeline: added read-only product quality reports for a manual QA pass before listings go live.
+- **2026-11-01** — Benjaire Flow: every inbound inquiry now mirrors into the Atlas client inbox for cross-system visibility.
 
 ### Latest on GitHub
 
