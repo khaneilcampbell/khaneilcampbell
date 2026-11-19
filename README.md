@@ -1,6 +1,6 @@
 ## Khaneil Campbell
 
-**AI Solutions Engineer**
+**AI Solutions Engineer · Forward Deployed Engineer**
 
 [khaneilcampbell.com](https://khaneilcampbell.com) · [LinkedIn](https://www.linkedin.com/in/khaneil-campbell) · contact@khaneilcampbell.com · [Benjaire](https://benjaire.com) 
 
@@ -16,6 +16,7 @@ I bring that same discipline to AI. I build agents and integrations with Claude,
 
 - **Discovery and scoping.** Turn a stakeholder's request into requirements I label verified, proposed or needs evidence, before writing code.
 - **Agents and LLM integration.** Claude through the Anthropic API and MCP servers, CrewAI multi-agent pipelines and n8n workflows wired into real tools like Stripe, Canva, GitHub and email.
+- **Integrations and data.** Policy-scoped data APIs over PostgreSQL for n8n and agents, signed workflow-start paths, and durable storage for agent outputs.
 - **Shipping with guardrails.** Schema validation and citation checks on model output, spend caps, human approval gates, CI tests, secret scanning, CodeQL and strict Content Security Policies.
 - **Adoption.** Runbooks, setup guides and knowledge articles written in the Knowledge-Centered Service style I used on the service desk.
 
@@ -23,18 +24,18 @@ I bring that same discipline to AI. I build agents and integrations with Claude,
 
 | Project | Problem → what I built → how it's verified → outcome |
 |---|---|
-| [**Atlas**](https://github.com/khaneilcampbell/ai-ops-atlas) | I needed one place to see and run every agent, workflow and repository I operate. Built a Tauri (Rust + React/TypeScript) Mac app and a Cloudflare Pages web build, now with a Mission Control surface where I plan, approve and delegate goals to agents, and Phase 9 autonomous operations that correlate incidents and run read-only recovery playbooks under per-playbook policy, with an emergency stop and a redacted audit trail. The Repository Intelligence agent sends one Claude request per run, validates the JSON against a schema, drops citations the model invented and enforces per-run and monthly spend caps. Write actions need Touch ID and are audit-logged. 139 test files, Playwright visual checks, a performance budget and CodeQL run in CI, and every merge ships a signed build. |
+| [**Atlas**](https://github.com/khaneilcampbell/ai-ops-atlas) | I needed one place to see and run every agent, workflow and repository I operate. Built a Tauri (Rust + React/TypeScript) Mac app and a Cloudflare Pages web build, with a Mission Control surface where I plan, approve and delegate goals to agents, and Phase 9 autonomous operations that correlate incidents and run read-only recovery playbooks under per-playbook policy, with an emergency stop and a redacted audit trail. The Repository Intelligence agent sends one Claude request per run, validates the JSON against a schema, drops citations the model invented and enforces per-run and monthly spend caps. Recent additions: a PostgreSQL data foundation with a policy-scoped data API for n8n and agents, where agent changes to records become approvals rather than overwrites; a Task Center path that starts two n8n workflows through signed, allow-listed requests with input checks, daily caps, idempotency keys and Touch ID on the Mac; and an Output Library that stores agent reports in D1 metadata and a private R2 bucket. Write actions are audit-logged. 139 test files, Playwright visual checks, a performance budget and CodeQL run in CI, and every merge ships a signed build. |
 | [**Benjaire Flow**](https://benjaire.com/digital/flow) | Small service firms lose leads in their inbox. Built six importable n8n workflows: Claude sorts each website inquiry and drafts a reply for the owner to approve (it never sends to prospects), with reminders, a weekly digest and error alerts behind a Cloudflare Worker form with Turnstile. 17 test scenarios run before go-live, and an eval suite scores the sorting on 60 labeled inquiries: 100% spam and budget accuracy, 98% service match, 5 of 5 prompt-injection attempts resisted. Released as v1.0 with Stripe checkout. |
 | [**Multi-Agent Commerce Pipeline**](https://github.com/khaneilcampbell/multi-agent-commerce-pipeline) | Take a digital product from idea to sale without manual handoffs. CrewAI agents on Claude plan the brand and listings, Canva's MCP server makes the designs, and Stripe sells them from a static storefront, run by systemd on a Linux VPS. New products stay drafts until I approve them, Stripe calls are idempotent, and 58 tests, gitleaks and pip-audit run in CI. |
 | [**Splunk Brute Force Detection Lab**](https://github.com/khaneilcampbell/splunk-bruteforce-detection-lab) | Detection and observability from end to end. Simulated SMB brute force from Kali on Windows 11, caught it with a Splunk threshold alert (81 failed logons) and wrote triage notes automatically in Python through the Splunk REST API, with unit tests and step-by-step evidence |
 
 ### Recent activity
 
-- **2026-11-17** — Atlas: shipped Mission Control's executive goals (plan, approve, delegate to agents) and Phase 9 autonomous operations — incident correlation, read-only recovery playbooks gated by per-playbook policy, an emergency stop and a redacted audit trail.
+- **2026-11-19** — Atlas: Task Center can start two n8n workflows through signed, allow-listed webhooks with per-workflow input checks, daily caps, idempotency keys and the emergency stop, and follows each execution until n8n reports it finished.
+- **2026-11-19** — Atlas: Output Library for durable storage of agent reports, with idempotent ingest, read-back verification, Access-protected preview and download, and a Library drawer.
+- **2026-11-19** — Atlas: PostgreSQL data foundation with a validated, policy-scoped data API for n8n and agents; agent changes to records become approvals instead of overwrites.
+- **2026-11-19** — Atlas: City agents panel and daily agent routines now driven by real n8n runs, GitHub and Task Center state, plus automation assignments and operational KPIs in Business Operations HQ.
 - **2026-11-17** — Atlas: routed Benjaire Flow and Multi-Agent Commerce Pipeline failures into a live agent-failure feed so outages surface in one place instead of separate inboxes.
-- **2026-11-15** — Benjaire Flow: added kill switches to instantly disable the contact form and Stripe checkout paths if something goes wrong in production.
-- **2026-11-04** — Multi-Agent Commerce Pipeline: added read-only product quality reports for a manual QA pass before listings go live.
-- **2026-11-01** — Benjaire Flow: every inbound inquiry now mirrors into the Atlas client inbox for cross-system visibility.
 
 ### Latest on GitHub
 
@@ -57,7 +58,9 @@ I bring that same discipline to AI. I build agents and integrations with Claude,
 |---|---|
 | **AI and agents** | Claude, Claude Code, Anthropic API, MCP servers and connectors, CrewAI, n8n |
 | **Languages** | Python, TypeScript, Rust (Tauri), PowerShell, SQL, Splunk SPL |
-| **Cloud, CI/CD and infrastructure** | GitHub Actions, Cloudflare Workers and Pages (D1, Access), Linux VPS with systemd, Docker, Git |
+| **Frontend and testing** | React, Playwright visual checks, performance budgets |
+| **Data and storage** | PostgreSQL (Supabase), Cloudflare D1 and R2 |
+| **Cloud, CI/CD and infrastructure** | GitHub Actions, Cloudflare Workers, Pages and Access, Linux VPS with systemd, Docker, Git |
 | **Security and observability** | Splunk Enterprise, CodeQL, gitleaks, pip-audit, Dependabot, CSP, MITRE ATT&CK, NIST incident response |
 | **Enterprise IT** | ServiceNow, Confluence, Active Directory, Cisco Duo MFA, ITIL 4, Knowledge-Centered Service |
 
